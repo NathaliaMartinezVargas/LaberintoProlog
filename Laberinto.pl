@@ -1,5 +1,5 @@
 #Posiciones de Conecta
-'''conecta(inicio,4).
+'''conecta(inicio,7).
 conecta(1,2).
 conecta(2,3).
 conecta(3,4).
@@ -29,13 +29,13 @@ conecta(24,30).
 conecta(26,27).
 conecta(27,28).
 conecta(29,30).
+conecta(30,fin).
 conecta(26,32).
 conecta(28,34).
 conecta(31,32).
 conecta(33,34).
 conecta(34,35).
 conecta(35,36).
-conecta(36,fin).
 '''
 
 conectado(Pos1,Pos2) :- conecta(Pos1,Pos2).
