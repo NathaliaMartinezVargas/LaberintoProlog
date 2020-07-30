@@ -38,12 +38,13 @@ conecta(34,35).
 conecta(35,36).
 '''
 
-conectado(Pos1,Pos2) :- conecta(Pos1,Pos2).
-conectado(Pos1,Pos2) :- conecta(Pos2,Pos1).
+conectado(X,Y):-conecta(X,Y).
+conectado(X,Y):-conecta(Y,X).
 
 miembro(X,[X|_]).
-miembro(X,[_|Y]) :- miembro(X,Y) .
-sol :- camino([inicio],Sol),write(Sol) .
-camino([fin|RestoDelCamino],[fin|RestoDelCamino]).
-camino([PosActual|RestoDelCamino],Sol) :- conectado(PosActual,PosSiguiente),\+ miembro(PosSiguiente,RestoDelCamino),
-					   camino([PosSiguiente,PosActual|RestoDelCamino],Sol).
+miembro(X,[_|Y]):- miembro(X,Y).
+
+tiene_solucion():-hay_camino([x],_).
+
+hay_camino([y|L],[y|L]).
+hay_camino([X|L],Y):-conectado(X,S),\+miembro(S,L),hay_camino([S,X|L],Y).
