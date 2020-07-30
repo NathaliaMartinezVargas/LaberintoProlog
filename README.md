@@ -6,4 +6,4 @@
 ## Laberinto:
 Encontrar la ruta solución del laberinto utilizando prolog y python. 
 
-![laberinto](https://github.com/NathaliaMartinezVargas/LaberintoProlog/blob/master/laberinto.png)
+![laberinto](https://github.com/NathaliaMartinezVargas/LaberintoProlog/blob/master/laberinto%20modelos2.png)
