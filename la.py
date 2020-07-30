@@ -6,6 +6,8 @@ infile = open('Laberinto.txt', 'r')
 lista = []
 for line in infile:
     lista = lista+[line]
+    
+#generador de conecta(x,y)
 
 for i in range(0,len(lista)-1):
     for j in range(0,len(lista[i])-1):
